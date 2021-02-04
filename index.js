@@ -5,10 +5,10 @@ const cors = require('cors');
 const app = express();
 
 
-const host = "localhost";
-const port = 8080;
+const host = process.env.host || "localhost";
+const port = process.env.PORT || 8080;
 
-const myurl = "http://localhost:8080/";
+const myurl = "http://"+host+":"+port+"/";
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, "/static")));
@@ -120,4 +120,4 @@ app.get('/load_playlist', (req, res)=>{
 });
 
 
-app.listen(8080, 'localhost');
+app.listen(port, host);
