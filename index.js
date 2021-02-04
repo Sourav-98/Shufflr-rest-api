@@ -81,7 +81,7 @@ app.get('/load_playlist', (req, res)=>{
         },
         {
             "id" : 10,
-            "track" : "Just The Way you Are" ,
+            "track" : "Just The Way You Are" ,
             "artist" : "Bruno Mars" ,
             "albumCover" : myurl+"resources/albumCover/Just_The_Way_You_Are.jpg" ,
             "file" : myurl+"resources/songs/Just_The_Way_You_Are.mp3"
@@ -113,7 +113,35 @@ app.get('/load_playlist', (req, res)=>{
             "artist" : "Major Lazer & Khalid" ,
             "albumCover" : myurl+"resources/albumCover/Trigger.jpg" ,
             "file" : myurl+"resources/songs/Trigger.mp3"
-        }
+        },
+        {
+            "id" : 15,
+            "track" : "E.T. (Extra Terrestrial)" ,
+            "artist" : "Katy Perry ft. Kanye West" ,
+            "albumCover" : myurl+"resources/albumCover/E_T_Extra_Terrestrial.jpg" ,
+            "file" : myurl+"resources/songs/E_T_Extra_Terrestrial.mp3"
+        },
+        {
+            "id" : 16,
+            "track" : "What I've Done" ,
+            "artist" : "Linkin Park" ,
+            "albumCover" : myurl+"resources/albumCover/What_Ive_Done.jpg" ,
+            "file" : myurl+"resources/songs/What_Ive_Done.mp3"
+        },
+        {
+            "id" : 17,
+            "track" : "Renegade" ,
+            "artist" : "Axwell Λ Ingrosso" ,
+            "albumCover" : myurl+"resources/albumCover/Renegade.jpg" ,
+            "file" : myurl+"resources/songs/Renegade.mp3"
+        },
+        {
+            "id" : 18,
+            "track" : "Wake Me Up" ,
+            "artist" : "Avicii" ,
+            "albumCover" : myurl+"resources/albumCover/Wake_Me_Up.jpg" ,
+            "file" : myurl+"resources/songs/Wake_Me_Up.mp3"
+        },
 
     ]
     res.send(playlist)
