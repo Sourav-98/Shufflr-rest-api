@@ -5,10 +5,10 @@ const cors = require('cors');
 const app = express();
 
 
-const host = process.env.host || "localhost";
+const host = "https://shufflr-heroku-api.herokuapp.com/";
 const port = process.env.PORT || 8080;
 
-const myurl = "http://"+host+":"+port+"/";
+const myurl = host;
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, "/static")));
@@ -120,4 +120,4 @@ app.get('/load_playlist', (req, res)=>{
 });
 
 
-app.listen(port, host);
+app.listen(port);
